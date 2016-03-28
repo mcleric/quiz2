@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8"
+		<meta charset="UTF-8">
 		<title>Quiz 2</title>
 	</head>
 	<body>
@@ -10,28 +10,34 @@
 			<h1>Hi, Welcome to the second quiz!</h1>
 			<p>Make sure the containers below respond to the events or functions implemented with quiz2.js</p>
 			<div class="evens">			
-				<div class="click">
+				<div class="click" style='right-margin: 20%; font-style:bold; border: 2px dashed red;'>
 					<span>click event</span>
 				</div>
-				<div class="mouse-over">
+				<div class="mouseover" style="border: 1px solid black; padding: 1%;">
 					<span>mouse over event</span>
 					<p>Who's the richest person you know? (mouse over to find out)</p>
 				</div>
-				<div>
+				<div class="submit" style='padding-top:3%; border:5px dotted purple;'>
 					<span>submit event</span>
 					<!-- The form not having an action or method is not a bug in this case -->
 					<form>
 						<label for="form">AJAX, yo!</label>
 						<input type="text" id="form" name="form" placeholder="Enter Some Text" />
-						<input value="SUBMIT">
+						<input type="submit" value="SUBMIT">
 					</form>
 				</div>
-				div class="timeout">
-					<span>timeout function</span>
+				<div class="timeout" style='padding-top:2%;'>
+					<h2>timeout function</h2>
 				</div>
 			</div>
-		
+			
+		</div>
+			<div style='padding-top:2%;'>
+				<button style='margin-left:45%; margin-right:45%; width:10%;' id="myButton">Get Title</button>
+			</div>
+			<div id="insert"></div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="quiz2.js"></script>
 	</body>
 </html>
